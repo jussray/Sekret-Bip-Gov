@@ -2,10 +2,15 @@
   "schemaVersion": "1.0",
   "repository": "jussray/Sekret-Bip-Gov",
   "portfolioAuthority": "jussray/founder-control-room",
+  "runtime": {
+    "primary": "governance-repository",
+    "cloudflareWorker": false
+  },
   "logpush": {
-    "participates": true,
+    "participates": false,
     "scope": "account",
     "dataset": "workers_trace_events",
+    "reason": "Current main is a governance/control repository with no Cloudflare Worker runtime.",
     "providerMutationAuthority": "founder-control-room-only",
     "credentialsStoredHere": false
   },
